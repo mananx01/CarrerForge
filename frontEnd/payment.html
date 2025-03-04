@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title>Payment Info</title>
+    <link href="{{ url_for('static', filename='pay2.css') }}" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+</head>
+
+<body>
+
+    <button class='glowing-btn' id="rzp-button1"><span class='glowing-txt'>Pay<span class='faulty-letter'>With</span>Razorpay</span></button>
+
+    <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+    <script>
+        var options = {
+            "key": "rzp_test_Hw4sQn2Wrbsw8u", // Enter the Key ID generated from the Dashboard
+            "amount": "{{pdata[0]}}", // Amount is in currency subunits. Default currency is INR. Hence, 50000 refers to 50000 paise
+            "currency": "INR",
+            "name": "Acme Corp",
+            "description": "Test Transaction",
+            "image": "https://example.com/your_logo",
+            "order_id": "{{pdata[1]}}", //This is a sample Order ID. Pass the `id` obtained in the response of Step 1
+            "callback_url": "/success",
+            "prefill": {
+                "name": "Manan Upmanyu",
+                "email": "manan2003@gmail.com",
+                "contact": "9818189119"
+            },
+            "notes": {
+                "address": "Razorpay Corporate Office"
+            },
+
+            "theme": {
+                "color": "#5cffab"
+            }
+        };
+        var rzp1 = new Razorpay(options);
+        document.getElementById('rzp-button1').onclick = function (e) {
+            rzp1.open();
+            e.preventDefault();
+        }
+    </script>
+</body>
+
+</html>

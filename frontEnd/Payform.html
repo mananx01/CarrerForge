@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+   <head>
+      <meta charset="utf-8">
+      <title>Payment Info</title>
+      <link href="{{ url_for('static', filename='pay.css') }}" rel="stylesheet">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+   </head>
+   <body>
+      <div class="login-form">
+         <div class="text">
+            Pay to Unlock Premium Features
+         </div>
+         <form action="/pay" method="post">
+            <div class="field">
+               <div class="fas fa-envelope"></div>
+               <input  placeholder="Enter Email " type="email" name="emaill">
+            </div>
+            <div class="field">
+               <div class="fas fa-lock"></div>
+               <input type="number" name="amt" placeholder="Enter Amount">
+            </div>
+            <button type="submit">Pay!</button>
+            
+         </form>
+      </div>
+   </body>
+</html>

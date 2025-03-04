@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>CarrerForge</title>
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie-edge" />
+    
+    <link href="{{ url_for('static', filename='landing-page1.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', filename='bear.css') }}" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://webchat-styler-css.botpress.app/prod/code/bccd6999-ac74-47a4-aea6-001e1c54c493/v41495/style.css">
+   
+    <!--  -->
+    
+</head>
+<body>
+    <div class="sticky-div">
+        <canvas class="illo"></canvas>
+      </div>
+    <script src="https://cdn.botpress.cloud/webchat/v1/inject.js"></script>
+    <script src="https://mediafiles.botpress.cloud/f58db687-d73e-4e76-9d85-19b04575947a/webchat/config.js" defer></script>
+    <div class="open">
+        <div class="layer"></div>
+        <div class="layer"></div>
+    </div>
+    <header>
+        <div class="header">
+            <div>
+            <ul>
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#section2">About</a></li>
+                <li><a href="#section3">Features</a></li>
+                <li><a href="/careers">Career Exploration</a></li>
+                <li><a href="/resume">Resume</a></li>
+                <li><a href="/signin">Sign In</a></li>
+            </ul>
+        </div>
+        </div>
+    </header>
+
+    <section>
+        <svg preserveAspectRatio="xMidYMid slice" viewBox="10 10 80 80">
+            <defs>
+                <style>
+                    @keyframes rotate {
+                   0% {
+                            transform: rotate(0deg);
+                        }
+                        100% {
+                            transform: rotate(360deg);
+                        }
+                    }
+                    .out-top {
+                        animation: rotate 20s linear infinite;
+                        transform-origin: 13px 25px;
+                    }
+                    .in-top {
+                        animation: rotate 10s linear infinite;
+                        transform-origin: 13px 25px;
+                    }
+                    .out-bottom {
+                        animation: rotate 25s linear infinite;
+                        transform-origin: 84px 93px;
+                    }
+                    .in-bottom {
+                        animation: rotate 15s linear infinite;
+                        transform-origin: 84px 93px;
+                    }
+                </style>
+            </defs>
+            <path fill="#e4572eff" class="out-top" d="M37-5C25.1-14.7,5.7-19.1-9.2-10-28.5,1.8-32.7,31.1-19.8,49c15.5,21.5,52.6,22,67.2,2.3C59.4,35,53.7,8.5,37-5Z"/>
+            <path fill="#f2af29ff" class="in-top" d="M20.6,4.1C11.6,1.5-1.9,2.5-8,11.2-16.3,23.1-8.2,45.6,7.4,50S42.1,38.9,41,24.5C40.2,14.1,29.4,6.6,20.6,4.1Z"/>
+            <path fill="#8f6593ff" class="out-bottom" d="M105.9,48.6c-12.4-8.2-29.3-4.8-39.4.8-23.4,12.8-37.7,51.9-19.1,74.1s63.9,15.3,76-5.6c7.6-13.3,1.8-31.1-2.3-43.8C117.6,63.3,114.7,54.3,105.9,48.6Z"/>
+            <path fill="#3b252cff" class="in-bottom" d="M102,67.1c-9.6-6.1-22-3.1-29.5,2-15.4,10.7-19.6,37.5-7.6,47.8s35.9,3.9,44.5-12.5C115.5,92.6,113.9,74.6,102,67.1Z"/>
+        </svg>
+
+
+      <div class="main-text">
+          <div class="bannerText">
+              <h2>CarrerForge</h2><br>
+              <h3>Navigating Your Career Path, Together</h3>
+          </div>
+          <div>
+              <img src="{{ url_for('static', filename='bg.png') }}" class="logo" alt="background-image">
+            
+          </div>
+
+      </div>
+        <!-- <ul class="sci">
+            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+            <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+        </ul> -->
+    </section>
+    <section class="section2" id ="section2">
+        <div class="content">
+            <h2 class="slideInLeft">About Us</h2>
+            <p id="typed-text-1">CarrerForge is a one-stop solution for career development and job search that is tailored to the needs of the modern workforce. This platform aims to empower users to make informed career decisions, equip them with the tools they need to succeed in their chosen path, and connect them with relevant job opportunities.</p>
+    </section>
+    <section class="section3" id="section3">
+      <div class="content">
+  
+        <div class="row-1">
+          <h1>Our Features</h1>
+        </div>
+        <div class="row">
+          <!-- Column One -->
+          <div class="column">
+            <div class="card">
+              
+              <h3>QUIZ</h3>
+              <div class="icon">
+                <img src="{{ url_for('static', filename='bg.png') }}" alt="" id="icon1">
+              </div>
+              <p id="typed-text-2">
+                🎉 Step right up and dive into our thrilling quiz! 🎉
+
+                Unlock the door to your perfect domain name! Tailored just for you, our quiz will whisk you away on a journey of discovery. As you navigate through the questions, we’ll be busy behind the scenes, crafting your ideal domain suggestion based on your unique responses.                       
+                But wait, there’s more! To embark on this exciting adventure, all you need to do is sign in. So, what are you waiting for? Your personalized domain name is just a quiz away!
+                Sign in now and let the magic begin! 🚀
+              </p>
+            </div>
+          </div>
+          <!-- Column Two -->
+          <div class="column">
+            <div class="card">
+              
+              <h3>Web RTC</h3>
+              <div class="icon">
+                <img src="{{ url_for('static', filename='webrtc.png') }}" alt="" id="icon2" width="5rem">
+              </div>
+              <p id="typed-text-3">
+                🌟 Unleash your potential with our expert career counselling! 🌟
+                Imagine having a personal guide on your journey to career success. Our experts are here to provide just that! Through one-on-one video counselling, they’ll offer insights and advice tailored to your unique aspirations and abilities.
+                This isn’t just any counselling session - it’s a transformative experience that could redefine your career path. So why wait?
+                Embark on your journey to career excellence today! Connect with our experts now! 🚀
+              </p>
+            </div>
+          </div>
+          <!-- Column Three -->
+          <div class="column">
+            <div class="card">
+              <h3>Career Exploration Resources</h3>
+              <div class="icon">
+                <img src="{{ url_for('static', filename='career_explore.png') }}" alt="" id="icon3" width="5rem">
+              </div>
+              <p id="typed-text-4">
+                🌟 Embark on a voyage of discovery with our Career Exploration Resources! 🌟
+
+                Picture this: A sunburst chart, bursting with colors, each ray representing a different career path just waiting to be explored. This isn’t just a chart, it’s a roadmap to your future, illuminating the myriad of career possibilities that lie ahead.
+                
+                Our Career Exploration Resources don’t just inform you about different careers, they inspire you to envision your future in vivid color.
+                
+                So why wait? Dive in and let the sunburst chart guide you on your journey to career discovery!
+                
+                Start exploring now and let your future shine bright! 🚀
+              </p>
+            </div>
+          </div>                  
+            <!-- Column Four -->
+            <div class="column">
+            <div class="card">
+              
+              <h3>Resume Builder</h3>
+              <div class="icon">
+                <img src="{{ url_for('static', filename='resume.png') }}" alt="" id="icon4" width="5rem">
+              </div>
+              <p id="typed-text-5">
+                🌟 Step into the spotlight with our Resume Builder! 🌟
+
+                Imagine a tool so intuitive, it feels like it’s reading your mind. Our Resume Builder is designed to do just that. Simply add your details into the respective columns and watch as your resume comes to life!
+                
+                But this isn’t just any resume. It’s a reflection of your journey, your skills, and your potential, all beautifully presented in a professional format.
+                
+                So why wait? Your dream job could be just a resume away!
+                
+                Start building your resume now and step into your future! 🚀
+              </p>
+            </div>
+          </div>   
+
+        </div>
+      
+      </div>
+    </section>
+            <!-- footer section start -->
+    <footer class="contact" id="contact">
+        <h2 class="heading">Contact <span>Me</span><span class="animate scroll" style="--i:1;"></span></h2>
+
+        <form action="#">
+            <div class="input-box">
+                <div class="input-field">
+                    <input type="text" placeholder="Full Name" required>
+                    <span class="focus"></span>
+                </div>
+                <div class="input-field">
+                    <input type="text" placeholder="Email" required>
+                    <span class="focus"></span>
+                </div>
+
+                <span class="animate scroll" style="--i:3;"></span>
+            </div>
+            <div class="input-box">
+                <div class="input-field">
+                    <input type="number" placeholder="Mobile Number" required>
+                    <span class="focus"></span>
+                </div>
+                <div class="input-field">
+                    <input type="text" placeholder="Email Subject" required>
+                    <span class="focus"></span>
+                </div>
+
+                <span class="animate scroll" style="--i:5;"></span>
+            </div>
+
+            <div class="textarea-field">
+                <textarea name="" id="" cols="30" rows="10" placeholder="Your Message" required></textarea>
+                <span class="focus"></span>
+
+                <span class="animate scroll" style="--i:7;"></span>
+            </div>
+
+            <div class="btn-box btns">
+                <button type="submit" class="btn">Submit</button>
+
+                <span class="animate scroll" style="--i:9;"></span>
+            </div>
+        </form>
+    </footer>
+
+    <footer class="footer-distributed">
+
+      <div class="footer-left">
+
+        <h3>CARRER FORGE</h3>
+      
+
+        <p class="footer-company-name">CarrerForge © 2024</p>
+      </div>
+
+      <div class="footer-center">
+
+        <div>
+          <i class="fa fa-map-marker"></i>
+          <p><span>Jaypee Institute of Information Technology</span> Noida-62, India</p>
+        </div>
+
+        <div>
+          <i class="fa fa-phone"></i>
+          <p>+91-8198291821</p>
+        </div>
+
+        <div>
+          <i class="fa fa-envelope"></i>
+          <p><a href="mailto:support@carrerforge.com">carrerforgebusiness@gmail.com</a></p>
+        </div>
+
+      </div>
+
+      <div class="footer-right">
+
+        <p class="footer-company-about">
+          <span>About CarrerForge</span>
+          Navigating Your Career Path, Together
+        </p>
+
+        <div class="footer-icons">
+
+          <a href="#"><i class="fa fa-facebook"></i></a>
+          <a href="#"><i class="fa fa-twitter"></i></a>
+          <a href="#"><i class="fa fa-linkedin"></i></a>
+          <a href="#"><i class="fa fa-github"></i></a>
+
+        </div>
+
+      </div>
+
+    </footer>
+                    
+</body>
+<script src="https://unpkg.com/zdog@1/dist/zdog.dist.js"></script>
+<script src="{{ url_for('static', filename='bear.js') }}"></script>
+<script>
+  function startTyping(targetElement, text) {
+      let index = 0; // Initial index
+
+      function typeText() {
+          if (index >= text.length) {
+              return; // Stop if we've reached or exceeded the text length
+          }
+
+          const char = text.charAt(index); // Current character
+          if (char === "\n") {
+              targetElement.innerHTML += "<br/>";
+          } else {
+              targetElement.textContent += char; // Add the current character
+          }
+
+          index++; // Increment index
+          setTimeout(typeText, 50); // Adjust the speed as needed
+      }
+
+      targetElement.textContent = ""; // Clear the text content
+      typeText(); // Start the typing animation
+  }
+
+  function isVisible(element) {
+      const rect = element.getBoundingClientRect();
+      return rect.top < window.innerHeight && rect.bottom > 0; // Check if the element is visible
+  }
+
+  let typingStarted = {
+      aboutUs: false,
+      ourFeatures: false,
+      resume: false,
+      career:false,
+      job:false,
+
+  };
+
+  window.addEventListener("scroll", () => {
+      if (!typingStarted.aboutUs) {
+          const aboutUsElement = document.getElementById("section2");
+          const textElement1 = document.getElementById("typed-text-1");
+
+          if (isVisible(aboutUsElement)) {
+              startTyping(textElement1, "CarrerForge is a one-stop solution for career development and job search that is tailored to the needs of the modern workforce. This platform aims to empower users to make informed career decisions, equip them with the tools they need to succeed in their chosen path, and connect them with relevant job opportunities.");
+              typingStarted.aboutUs = true; // Mark it as started
+          }
+      }
+
+      if (!typingStarted.ourFeatures) {
+          const ourFeaturesElement = document.getElementById("section3");
+          const textElement2 = document.getElementById("typed-text-2");
+
+          if (isVisible(ourFeaturesElement)) {
+              startTyping(textElement2, " 🎉 Step right up and dive into our thrilling quiz!🎉 Unlock the door to your perfect domain name! Tailored just for you, our quiz will whisk you away on a journey of discovery. As you navigate through the questions, we’ll be busy behind the scenes, crafting your ideal domain suggestion based on your unique responses.   But wait, there’s more! To embark on this exciting adventure, all you need to do is sign in. So, what are you waiting for? Your personalized domain name is just a quiz away!Sign in now and let the magic begin! 🚀");
+              typingStarted.ourFeatures = true; // Mark it as started
+          }
+      }
+
+      if (!typingStarted.webRtc) {
+        const webRtcElement = document.getElementById("section3"); // Same section but different text
+        const textElement3 = document.getElementById("typed-text-3");
+
+        if (isVisible(webRtcElement)) {
+            startTyping(textElement3, "🌟 Unleash your potential with our expert career counselling! 🌟 Imagine having a personal guide on your journey to career success. Our experts are here to provide just that! Through one-on-one video counselling, they’ll offer insights and advice tailored to your unique aspirations and abilities. This isn’t just any counselling session - it’s a transformative experience that could redefine your career path. So why wait? Embark on your journey to career excellence today! Connect with our experts now! 🚀");
+            typingStarted.webRtc = true; // Mark it as started
+        }
+    }
+
+    if (!typingStarted.resume) {
+        const resumeR = document.getElementById("section3"); // Same section but different text
+        const textElement4 = document.getElementById("typed-text-4");
+
+        if (isVisible(resumeR)) {
+            startTyping(textElement4, "🌟 Embark on a voyage of discovery with our Career Exploration Resources! 🌟Picture this: A sunburst chart, bursting with colors, each ray representing a different career path just waiting to be explored. This isn’t just a chart, it’s a roadmap to your future, illuminating the myriad of career possibilities that lie ahead.Our Career Exploration Resources don’t just inform you about different careers, they inspire you to envision your future in vivid color.So why wait? Dive in and let the sunburst chart guide you on your journey to career discovery!Start exploring now and let your future shine bright! 🚀");
+            typingStarted.resume = true; // Mark it as started
+        }
+    }
+
+    if (!typingStarted.job) {
+        const jobElement = document.getElementById("section3"); // Same section but different text
+        const textElement5 = document.getElementById("typed-text-5");
+
+        if (isVisible(jobElement)) {
+            startTyping(textElement5, "🌟 Step into the spotlight with our Resume Builder! Imagine a tool so intuitive, it feels like it’s reading your mind. Our Resume Builder is designed to do just that. Simply add your details into the respective columns and watch as your resume comes to life!But this isn’t just any resume. It’s a reflection of your journey, your skills, and your potential, all beautifully presented in a professional format.So why wait? Your dream job could be just a resume away!Start building your resume now and step into your future! 🚀");
+            typingStarted.job = true; // Mark it as started
+        }
+    }
+});
+
+</script>
+</html>

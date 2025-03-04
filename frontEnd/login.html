@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Animated Login Form </title>
+  <link href="{{ url_for('static', filename='reg-login.css') }}" rel="stylesheet">
+
+</head>
+
+<body>
+  <div class="ripple-background">
+    <div class="circle xxlarge shade1"></div>
+    <div class="circle xlarge shade2"></div>
+    <div class="circle large shade3"></div>
+    <div class="circle medium shade4"></div>
+    <div class="circle small shade5"></div>
+  </div>
+  
+  <section>
+    <div class="container" id="container">
+      <div class="main-container sign-up">
+        <img src="{{ url_for('static', filename='logobg.jpg') }}">
+          <button id="button"><a  href="/register">Sign Up</a> </button>
+      </div> 
+      <div class="main-container log-in">
+          <form  onsubmit="return validateForm()" action="/login" method="POST">
+              <h2>Log In</h1><br>
+              <input type="email" placeholder="Email" name="email" required>
+              <input type="password" placeholder="Password" name="password" required>
+              <button type="submit">log In</button>
+          </form>
+      </div> 
+      <div class="toggle-container">
+          <div class="toggle">
+              <div class="toggle-panel toggle-left">
+                  <h1>Welcome Back!</h1>
+                  <p>if you're an existing user, log in</p>
+                  <button class="hidden" id="login">Log In</button>
+              </div> 
+              <div class="toggle-panel toggle-right">
+                  <h1>JobMeUp</h1>
+                  <p>if you're a new user, hi register</p>
+                  <button class="hidden" id="register"> </button>
+              </div>
+          </div>
+      </div>
+  </div>
+  </section>
+
+<script src="{{ url_for('static', filename='login.js') }}"></script>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
