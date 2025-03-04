@@ -1,1 +1,2 @@
 # CarrerForge
+### Career Forge is a comprehensive platform designed to streamline career development and job searching. It empowers users with the right tools, insights, and connections to make informed career decisions and secure relevant job opportunities.
